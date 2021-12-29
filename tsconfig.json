@@ -2,8 +2,10 @@
     "include": [
         "./src/**/*"
     ],
+    // 一部だけゆるくする設定も可能
     "compilerOptions": {
         "strict": true,
+        "noImplicitAny": false, // 型定義がなくany型になってもチェックしない
         "esModuleInterop": true,
         "lib": [
             "dom",
